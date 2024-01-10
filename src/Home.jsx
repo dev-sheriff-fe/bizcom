@@ -20,7 +20,7 @@ const Home = () => {
     <div className={`landing ${isNavOpen ? 'is-nav-open' : ''}`}>
         <header id="header" className="alt">
           <h1><a href="/bizcom"><img src={logo} alt="BizCom Logo"/></a></h1>
-          <a href="#nav" className="close" onClick={handleNavToggle}>Men</a>
+          <a href="#nav" className="close" onClick={handleNavToggle}>Menu</a>
         </header>
 
       <nav id="nav" className={`close ${isNavOpen ? 'visible' : ''}`}>
