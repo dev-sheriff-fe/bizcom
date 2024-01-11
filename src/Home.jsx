@@ -25,11 +25,11 @@ const Home = () => {
 
       <nav id="nav" className={`close ${isNavOpen ? 'visible' : ''}`}>
         <ul className="links">
-          <li><a><Link to="/bizcom" style={{textDecoration : "none"}}>Home</Link></a></li>
-          <li><a><Link to="/bizcom/about" style={{textDecoration : "none"}}>About US</Link></a></li>
-          <li><a ><Link to="/bizcom/services" style={{textDecoration : "none"}}>Services</Link></a></li>
+          <li><a href='/bizcom'><Link to="/bizcom" style={{textDecoration : "none"}}>Home</Link></a></li>
+          <li><a href='/bizcom/about'><Link to="/bizcom/about" style={{textDecoration : "none"}}>About US</Link></a></li>
+          <li><a href='/bizcom/services'><Link to="/bizcom/services" style={{textDecoration : "none"}}>Services</Link></a></li>
         </ul>
-        <a href="#nav" className="close" onClick={handleNavToggle}></a>
+        <a href="#nav" className="close" onClick={handleNavToggle}>.</a>
       </nav>
 
       <section id="banner">
@@ -48,7 +48,7 @@ const Home = () => {
         <div className="inner">
           <article className="feature left">
             <span className="image">
-              <img src={img1} alt="Image 1" width="500" height="400" />
+              <img src={img1} alt="laptopIMG" width="500" height="400" />
               </span>
             <div className="content">
               <h2>About US</h2>
@@ -59,7 +59,7 @@ const Home = () => {
             </div>
           </article>
           <article className="feature right">
-            <span className="image"><img src={img2} alt="image 2" width="600" height="500" /></span>
+            <span className="image"><img src={img2} alt="FounderIMG" width="600" height="500" /></span>
             <div className="content">
               <h2>Our Founder</h2>
               <p>Meet Adebayo Azeez, the innovative mind behind the undisputable technological web services being rendered BizCom InfoTech.  <br />After imparting knowledge for nearly two decades at the University of Ilesa, this seasoned lecturer possesses a wealth of expertise and is ready to offer additional valuable services to the global community.</p>
@@ -145,10 +145,10 @@ const Home = () => {
       <footer id="footer">
         <div className="inner">
           <ul className="icons">
-            <li><a onClick={handleAlert} className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a onClick={handleAlert} className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a onClick={handleAlert} className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a onClick={handleAlert} className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
           </ul>
         </div>
       </footer>
