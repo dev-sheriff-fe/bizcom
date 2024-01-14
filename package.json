@@ -1,7 +1,7 @@
 {
   "name": "bizcom",
   "version": "0.1.0",
-  "homepage": "https://bizcom.netlify.app/bizcom",
+  "homepage": "https://bizcom.netlify.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
