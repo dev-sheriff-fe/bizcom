@@ -19,15 +19,15 @@ const Home = () => {
   return (
     <div className={`landing ${isNavOpen ? 'is-nav-open' : ''}`}>
         <header id="header" className="alt">
-          <h1><a href="/bizcom"><img src={logo} alt="BizCom Logo"/></a></h1>
+          <h1><a href="/"><img src={logo} alt="BizCom Logo"/></a></h1>
           <a href="#nav" className="close" onClick={handleNavToggle}>Menu</a>
         </header>
 
       <nav id="nav" className={`close ${isNavOpen ? 'visible' : ''}`}>
         <ul className="links">
-          <li><a href='/bizcom'><Link to="/bizcom" style={{textDecoration : "none"}}>Home</Link></a></li>
-          <li><a href='/bizcom/about'><Link to="/bizcom/about" style={{textDecoration : "none"}}>About US</Link></a></li>
-          <li><a href='/bizcom/services'><Link to="/bizcom/services" style={{textDecoration : "none"}}>Services</Link></a></li>
+          <li><a href='/'><Link to="/" style={{textDecoration : "none"}}>Home</Link></a></li>
+          <li><a href='/about'><Link to="/about" style={{textDecoration : "none"}}>About US</Link></a></li>
+          <li><a href='/services'><Link to="/services" style={{textDecoration : "none"}}>Services</Link></a></li>
         </ul>
         <a href="#nav" className="close" onClick={handleNavToggle}>.</a>
       </nav>
@@ -54,7 +54,7 @@ const Home = () => {
               <h2>About US</h2>
               <p>BizCom, a company established by a team of experienced, dedicated and young professionals to deliver quality service to our customers timely and at competitive prices...</p>
               <ul className="actions">
-                <li><a href="/bizcom/about" className="button alt">More</a></li>
+                <li><a href="/about" className="button alt">More</a></li>
               </ul>
             </div>
           </article>
@@ -64,7 +64,7 @@ const Home = () => {
               <h2>Our Founder</h2>
               <p>Meet Adebayo Azeez, the innovative mind behind the undisputable technological web services being rendered BizCom InfoTech.  <br />After imparting knowledge for nearly two decades at the University of Ilesa, this seasoned lecturer possesses a wealth of expertise and is ready to offer additional valuable services to the global community.</p>
               <ul className="actions">
-                <li><a href="/bizcom/services" className="button alt">More</a></li>
+                <li><a href="/services" className="button alt">More</a></li>
               </ul>
             </div>
           </article>
@@ -87,14 +87,14 @@ const Home = () => {
             <a href="#" className="image"><img src={img1} alt="" width="299" height="200" /></a>
             <a href="#" className="image"><img src={img1} alt="" width="299" height="200" /></a>
             <a href="#" className="image"><img src={img1} alt="" width="299" height="200" /></a> */}
-            <a href="/bizcom/services" style={{textDecoration : "none", color : "#1d2227"}}>1. Web Design, Maintenance, and Hosting</a> <br /> <br />
-            <a href="/bizcom/services" style={{textDecoration : "none", color : "#1d2227"}}>2. Networking and Structure Cabling Solutions</a> <br /> <br />
-            <a href="/bizcom/services" style={{textDecoration : "none", color : "#1d2227"}}>3. Computer Systems and Accessories</a> <br /> <br />
-            <a href="/bizcom/services" style={{textDecoration : "none", color : "#1d2227"}}>4. Network Design and Implementation</a> <br /> <br />
-            <a href="/bizcom/services" style={{textDecoration : "none", color : "#1d2227"}}>5. Software and Hardware Sales and Maintenance</a> <br /> <br /> <br />
+            <a href="/services" style={{textDecoration : "none", color : "#1d2227"}}>1. Web Design, Maintenance, and Hosting</a> <br /> <br />
+            <a href="/services" style={{textDecoration : "none", color : "#1d2227"}}>2. Networking and Structure Cabling Solutions</a> <br /> <br />
+            <a href="/services" style={{textDecoration : "none", color : "#1d2227"}}>3. Computer Systems and Accessories</a> <br /> <br />
+            <a href="/services" style={{textDecoration : "none", color : "#1d2227"}}>4. Network Design and Implementation</a> <br /> <br />
+            <a href="/services" style={{textDecoration : "none", color : "#1d2227"}}>5. Software and Hardware Sales and Maintenance</a> <br /> <br /> <br />
           </div>
           <ul className="actions">
-            <li><a href="/bizcom/services" className="button big alt">More</a></li>
+            <li><a href="/services" className="button big alt">More</a></li>
           </ul>
         </div>
       </section>
@@ -145,10 +145,10 @@ const Home = () => {
       <footer id="footer">
         <div className="inner">
           <ul className="icons">
-            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href='/bizcom' onClick={handleAlert} className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            <li><a href='/' onClick={handleAlert} className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+            <li><a href='/' onClick={handleAlert} className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href='/' onClick={handleAlert} className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href='/' onClick={handleAlert} className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
           </ul>
         </div>
       </footer>
